@@ -1,0 +1,28 @@
+body{
+    margin: 0px;
+    padding: 0px;
+
+}
+body p{
+    font-size: 20px;
+}
+.container-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 200px;
+    
+}
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    background-color: #7CA23C;
+    border-radius: 5%;
+}
+.img{
+    height: 350px;
+}
