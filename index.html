@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 1</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 <body>
         <div class="container-main">
             <div class="tarjeta">
                 <div class="image">
-                    <img class="" src="/assets/img/nocolor.png" alt="notebook sin color">
+                    <img id="imagen-notebook" src="/assets/img/nocolor.png" alt="notebook sin color">
                 </div>
                 <div class="name-pc">
                         <p>Seleccione el color de equipo</p>
@@ -20,7 +21,14 @@
                     <input type="text" id="cantidad" name="cantidad"  placeholder="cantidad">
                 </div>
                 <div class="input-Color">
-                    <input type="text" id="color" name="color"  placeholder="color">
+                    <form >
+                        <input type="radio" id="color" name="color-seleccionado" value="Rojo">
+                        <label for="Rojo">Rojo</label><br>
+                        <input type="radio" id="color" name="color-seleccionado" value="negro">
+                        <label for="negro">Negro</label><br>
+                        <input type="radio" id="color" name="color-seleccionado" value="azul">
+                        <label for="azul">Azul</label>
+                      </form>
                 </div>
                 <div class="text-precio">
                     <p>Precio: $</p>
@@ -31,15 +39,17 @@
                 </div>
             </div>
 
-            <div class="resulatado-js">
+            <div class="resultado-js">
                 <div class="resultado-js">
                     <p >Total:$<spam class="resultado"> 0 </spam></p>
                 </div>
                 <div class="cantidad-js">
                     <p >Cantidad: <spam class="cantidad"> 0 </spam></p>
                 </div>
-                <div class="color-js"> </div>
+                <div class="color-js"> 
+                    <p >Color: <spam class="color"> 0 </spam></p>
             </div>
         </div>
+        <script src="./assets/js/index.js"></script>
 </body>
 </html>

@@ -26,3 +26,8 @@ body p{
 .img{
     height: 350px;
 }
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
